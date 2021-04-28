@@ -1,0 +1,19 @@
+.body{
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: 0;
+    margin: 0px;
+}
+ul{
+    display: inline;
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+ul li:hover{
+    color: grey;
+    transition: all 0.2s;
+}

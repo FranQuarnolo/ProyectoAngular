@@ -1,0 +1,13 @@
+<div *ngIf="loading" class="body">
+    <br>
+    <p>Nombre: {{producto[0].name}}</p>
+    <p>Descripcion:</p>
+    <p>{{producto[0].description}}</p>
+    <p>Stock: {{producto[0].stock}}</p>
+    <p>Precio: ${{producto[0].price}}</p>
+    <br>
+    <button routerLink="">Volver al listado</button>
+</div>
+<div *ngIf="!loading">
+    Loading...
+</div>

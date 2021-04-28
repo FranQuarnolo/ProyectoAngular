@@ -1,0 +1,20 @@
+<div class="body">
+    <form [formGroup]=formLogin (ngSubmit)="registro()">
+        <h1>LOGIN</h1>
+        <div>
+            <input type="email" placeholder="Email" formControlName="email">
+        </div>
+        <div *ngIf="formLogin.get('email')?.errors && formLogin.get('email')?.dirty">
+            <p class="error" *ngIf="formLogin.get('email')?.hasError('required')">Este campo es obligatorio!</p>
+        </div>
+        <div>
+            <input type="password" placeholder="Password" formControlName="password">
+        </div>
+        <div *ngIf="formLogin.get('password')?.errors && formLogin.get('password')?.dirty">
+            <p class="error" *ngIf="formLogin.get('password')?.hasError('required')">Este campo es obligatorio!</p>
+            <p class="error" *ngIf="formLogin.get('password')?.hasError('minlength')">Este campo debe contener minimo 6 caracteres</p>
+            <p class="error" *ngIf="formLogin.get('password')?.hasError('maxlength')">Este campo debe contener maximo 10 caracteres</p>
+        </div>
+        <input class="enviar" type="submit" value="Registrarse" [disabled]="formLogin.invalid">
+    </form>
+</div>

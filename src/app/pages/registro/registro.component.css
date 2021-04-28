@@ -1,0 +1,53 @@
+.body{
+    background-color: #335080;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    height: 100vh;
+    position: relative;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+form{
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 35%;
+    position: absolute;
+    
+}
+div{
+    margin: 15px;
+    margin-top: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif bold;
+}
+input{
+    width: 300px;
+    height: 25px;
+    border-radius: 2px;
+}
+.enviar{
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: white;
+    background-color: #092d45;
+    color: white;
+}
+.enviar:hover{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    transition: 0.3s;
+}
+.error{
+    color: red;
+    font-size: 16px;
+}
